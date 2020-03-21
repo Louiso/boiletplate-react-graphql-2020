@@ -2,6 +2,7 @@ import React from 'react'
 import { Paper , Tabs, Tab } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import { TabPanel } from 'components/__globals'
+import Schedule from './Schedule'
 
 
 export default () => {
@@ -15,7 +16,7 @@ export default () => {
     <div>
       <Paper className={classes.root}>
         <TabPanel value={value} index={0} className={classes.tabPanel}>
-          Calendario
+          <Schedule />
         </TabPanel>
         <TabPanel value={value} index={1} className={classes.tabPanel}>
           Foro
