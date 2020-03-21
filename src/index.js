@@ -2,11 +2,30 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import Root from 'routes'
+import { ApolloProvider } from "@apollo/react-hooks"
+
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+
+import { client } from "apollo"
+
 import * as serviceWorker from './serviceWorker'
 
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Raleway',
+      'sans-serif'
+    ].join(','),
+    fontSize: 14
+  }
+})
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <ApolloProvider client={client}>
+      <ThemeProvider theme={theme}>
+        <Root />
+      </ThemeProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

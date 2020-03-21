@@ -34,8 +34,9 @@
     "airbnb",
     "prettier"
   ],
-  "plugins": ["react-hooks", "prettier","jest"],
+  "plugins": ["react-hooks", "prettier","jest","sort-keys-fix"],
   "rules": {
+    "sort-keys-fix/sort-keys-fix": "warn",
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
