@@ -67,7 +67,8 @@
     "components": "./src/components",
     "containers": "./src/containers",
     "utils": "./src/utils",
-    "apollo": "./src/apollo"
+    "apollo": "./src/apollo",
+    "routes": "./src/routes"
   },
   "husky": {
     "hooks": {
