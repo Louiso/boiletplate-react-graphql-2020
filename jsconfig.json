@@ -1,0 +1,36 @@
+{
+  "target": "es6",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "components": [
+        "./components"
+      ],
+      "containers": [
+        "./containers"
+      ],
+      "utils": [
+        "./utils"
+      ],
+      "apollo": [
+        "./apollo"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "containers/*": [
+        "./containers/*"
+      ],
+      "utils/*": [
+        "./utils/*"
+      ],
+      "apollo/*": [
+        "./apollo/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
