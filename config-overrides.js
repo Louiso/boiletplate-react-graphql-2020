@@ -13,8 +13,8 @@ module.exports = override(
     'react-dom': '@hot-loader/react-dom'
   }),
   fixBabelImports('import', {
-    libraryName: 'antd',
     libraryDirectory: 'es',
+    libraryName: 'antd',
     style: 'css',
   })
 )
