@@ -36,6 +36,12 @@
   ],
   "plugins": ["react-hooks", "prettier","jest","sort-keys-fix"],
   "rules": {
+    "space-in-parens": ["error", "never"],
+    "array-bracket-spacing":  ["error", "always"],
+    "object-curly-spacing":["error", "always", { "objectsInObjects": false }],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "object-curly-newline": ["error", { "multiline": true }],
+    "indent": ["error", 2],
     "sort-keys-fix/sort-keys-fix": "warn",
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",

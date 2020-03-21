@@ -1,6 +1,4 @@
 export default {
-  Mutation: {
-    holaMundo: () => 'Hola Mundo'
-  },
+  Mutation: { holaMundo: () => 'Hola Mundo' },
   Query: {}
 }

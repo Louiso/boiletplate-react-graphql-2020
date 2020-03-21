@@ -5,21 +5,17 @@ import resolverHome from "./home/resolvers"
 import { mergeResolvers } from "./utils"
 import data from "./data"
 
-const resolversArray = [resolverHome]
+const resolversArray = [ resolverHome ]
 const resolvers = mergeResolvers(resolversArray)
 
-const cache = new InMemoryCache({
-  resolvers
-})
+const cache = new InMemoryCache({ resolvers })
 
 const client = new ApolloClient({
   cache,
   link: new HttpLink(),
 })
 
-cache.writeData({
-  data
-})
+cache.writeData({ data })
 
 window.cache = cache.optimisticData.data
 
